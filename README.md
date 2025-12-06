@@ -7,33 +7,22 @@ From small experiments to long-term projects — welcome to my digital playgroun
 
 <div align="center">
 
-  <!-- 🏙️ 3D 城市贡献图 (这是你之前生成的，非常炫酷，保留) -->
+  <!-- 🏙️ 3D 城市模型 (保持你喜欢的炫酷效果) -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/dieWehmut/dieWehmut/raw/main/profile-3d-contrib/profile-night-rainbow.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/dieWehmut/dieWehmut/raw/main/profile-3d-contrib/profile-green-animate.svg">
     <img alt="3D Contribution Graph" src="https://github.com/dieWehmut/dieWehmut/raw/main/profile-3d-contrib/profile-green-animate.svg" />
   </picture>
 
-  <br />
-  <br />
-
-  <!-- 📊 语言与数据分析 -->
+  <!-- 📊 详细语言数据 (伪装成图例) -->
   <!-- 
-      参数修改说明：
-      langs_count=10 : 强制显示前10种语言（不再只显示5种，消灭 Other！）
-      layout=compact :以此来显示详细的百分比列表，比纯饼图更清晰
-      bg_color=161b22: 修复图片裂开问题
+       配置说明：
+       1. top_langs_count=10 : 显示前10种语言 (解决只显示5种的问题)
+       2. hide_title=true : 隐藏标题，让它看起来不像个独立的卡片
+       3. layout=compact : 紧凑模式，如果是普通模式会显示进度条和百分比
+       这里我选用了普通模式(去掉layout=compact)，因为你特别要求显示"扇形对应的占比(%)"
+       只有普通模式才会把 % 数字写出来。
   -->
-  <img src="https://github-readme-stats.private.coffee/api?username=dieWehmut&show_icons=true&theme=tokyonight&hide_border=true&bg_color=161b22" height="180" alt="stats" />
-  <img src="https://github-readme-stats.private.coffee/api/top-langs/?username=dieWehmut&layout=compact&langs_count=10&theme=tokyonight&hide_border=true&bg_color=161b22" height="180" alt="languages" />
+  <img src="https://github-readme-stats.private.coffee/api/top-langs/?username=dieWehmut&theme=tokyonight&hide_border=true&hide_title=true&bg_color=transparent&top_langs_count=10&text_color=bfbfbf" alt="languages" />
 
 </div>
-
----
-
-### 🧪 **What this space is for**
-✨ Building stuff I personally want  
-✨ Sharing things that might inspire others  
-✨ Open to **Ideas**, **Suggestions**, and **Pull Requests**! 💬
-
-Thanks for stopping by! 🌟
