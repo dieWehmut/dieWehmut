@@ -1,7 +1,6 @@
 name: Generate Snake
 
 on:
-  # 每天午夜自动运行
   schedule:
     - cron: "0 0 * * *" 
   workflow_dispatch:
@@ -19,7 +18,7 @@ jobs:
           github_user_name: dieWehmut
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#ffc107&color_dots=#161b22,#4b0082,#800080,#ba55d3,#e6e6fa
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
