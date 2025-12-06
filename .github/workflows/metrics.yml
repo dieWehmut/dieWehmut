@@ -2,7 +2,7 @@ name: Language Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *" # 每天午夜更新
+    - cron: "0 0 * * *" # 每天更新
   workflow_dispatch:
 
 jobs:
@@ -13,23 +13,21 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # 使用 GITHUB_TOKEN，无需手动设置 secrets
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           
-          # 输出文件名为 metrics.svg
           filename: dist/metrics.svg
-          committer_branch: output-metrics # 将图片保存在这个新分支
+          committer_branch: output-metrics
           
-          # 基础配置
           user: dieWehmut
           template: classic
-          base: "" # 关闭基础数据，我们只想要语言分析
+          base: "" # 只显示语言，不显示基础数据
           config_timezone: Asia/Shanghai
           
-          # 🧩 语言插件配置 (这是重点！)
+          # 🧩 语言插件配置
           plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot # 忽略非编程语言，提高准确度
-          plugin_languages_limit: 8                 # 显示前 8 种语言
-          plugin_languages_details: bytes-size, percentage # 显示详细占比数据
-          plugin_languages_colors: github           # 使用 Github 官方配色
-          plugin_languages_threshold: 0%            # 显示所有比例的语言
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_colors: github
+          plugin_languages_threshold: 0%
+          commits_authoring: dieWehmut
