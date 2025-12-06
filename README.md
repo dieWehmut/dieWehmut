@@ -7,7 +7,7 @@ From small experiments to long-term projects — welcome to my digital playgroun
 
 <div align="center">
 
-  <!-- 🐍 修复版：使用 picture 标签完美切换深色/浅色模式 -->
+  <!-- 🐍 炫酷版贪吃蛇 (深色模式下是金色蛇+紫色格子) -->
   <a href="https://github.com/dieWehmut/dieWehmut/actions/workflows/snake.yml">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/dieWehmut/dieWehmut/raw/output/github-contribution-grid-snake-dark.svg">
@@ -19,9 +19,9 @@ From small experiments to long-term projects — welcome to my digital playgroun
   <br />
   <br />
 
-  <!-- 📊 修复版：将背景颜色改为标准透明单词，防止图片裂开 -->
-  <img src="https://github-readme-stats.vercel.app/api?username=dieWehmut&show_icons=true&theme=tokyonight&hide_border=true&bg_color=transparent" height="160" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dieWehmut&layout=compact&theme=tokyonight&hide_border=true&bg_color=transparent" height="160" alt="languages" />
+  <!-- 📊 修复版：使用强制背景色 #161b22 解决图片裂开问题 -->
+  <img src="https://github-readme-stats.vercel.app/api?username=dieWehmut&show_icons=true&theme=tokyonight&hide_border=true&bg_color=161b22" height="160" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dieWehmut&layout=compact&theme=tokyonight&hide_border=true&bg_color=161b22" height="160" alt="languages" />
 
 </div>
 
