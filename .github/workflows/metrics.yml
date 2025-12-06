@@ -14,7 +14,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           # 使用 GITHUB_TOKEN，无需手动设置 secrets
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
           
           # 输出文件名为 metrics.svg
           filename: dist/metrics.svg
