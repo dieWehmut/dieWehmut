@@ -16,9 +16,6 @@ From small experiments to long-term projects — welcome to my digital playgroun
   <br />
   <br />
 
-  <img src="https://github-readme-stats.private.coffee/api?username=dieWehmut&show_icons=true&theme=tokyonight&hide_border=true&bg_color=transparent" height="160" alt="stats" />
-  <img src="https://github-readme-stats.private.coffee/api/top-langs/?username=dieWehmut&layout=compact&theme=tokyonight&hide_border=true&bg_color=transparent" height="160" alt="languages" />
-
 </div>
 
 ---
